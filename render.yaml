@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: flow-puppeteer-server
+    runtime: docker
+    repo: https://github.com/YOUR_USER/YOUR_REPO
+    plan: free
