@@ -1,16 +1,16 @@
 FROM ghcr.io/puppeteer/puppeteer:latest
 
+ENV PUPPETEER_SKIP_DOWNLOAD=false
+ENV PORT=3000
+
 WORKDIR /app
 
-COPY package*.json ./
-
 USER root
+
+COPY package*.json ./
 RUN npm install
-USER pptruser
 
 COPY . .
-
-ENV PORT=3000
 
 EXPOSE 3000
 
