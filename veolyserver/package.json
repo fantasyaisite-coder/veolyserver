@@ -1,0 +1,13 @@
+{
+  "name": "flow-cookie-server",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "express": "^4.18.0",
+    "firebase": "^10.14.0",
+    "puppeteer": "^21.11.0"
+  },
+  "scripts": {
+    "dev": "node server.js"
+  }
+}
