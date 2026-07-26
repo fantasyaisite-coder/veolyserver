@@ -2,9 +2,6 @@ FROM ghcr.io/puppeteer/puppeteer:latest
 
 WORKDIR /app
 
-ENV PUPPETEER_SKIP_DOWNLOAD=true
-ENV PUPPETEER_CHROME_PATH=/usr/bin/google-chrome
-
 COPY package*.json ./
 
 USER root
